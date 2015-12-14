@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>pasar numeros decimales a binarios en javascript</title>
+<script language="javascript">
+function dec2bin(i)
+{ 
+	return (i<1)?"":dec2bin((i-(i%2))/2)+i%2; 
+}
+</script>
+</head>
+<body>
+	<form name="form1" action="" method="post" onSubmit="">
+        Decimal:<input type="text" name="dec"><br>
+        Binario:<input type="text" name="bin"><br>
+		<input type="button" value="Convertir" onClick="bin.value=dec2bin(dec.value);">
+	</form>
+</body>
+</html> 

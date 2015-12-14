@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+.contenedor
+	{
+		width: 80%;
+		margin: 5px auto 5px auto;
+		background-image:url(fondo.png);
+		background-repeat:repeat-x;
+	}
+
+
+.cabecera 
+	{ 
+		text-align:center;
+		font-size: 24px;
+		color: #03F
+	}		
+
+.cfgs
+	{
+		font-size:9px;
+	}
+
+.der
+	{
+		float:right;
+		padding: 20px;
+		width:20%;
+	}
+
+.izq
+	{
+		float:left;
+		padding: 20px;
+		width:20%;
+	}
+	
+.centro
+	{
+		float: center
+		width:40%
+	}
+
+.calendario
+	{
+		background-color:#666;
+		color: #F93;
+		text-align:center
+	}
+.rojo
+	{
+		color: red;
+	}
+
+.nav 
+	{
+		text-align:center;
+		padding:5px 0px 5px 0px;
+	}
+	
+.nav ul
+	{
+		display: inline;
+		list-style-type: none;
+		padding: 0px;
+	}
+	
+.nav li
+	{
+		display: inline;
+		margin-left: 10px;
+		margin-right: 10px;
+		border: 1px solid #6F0;
+		position:relative;
+		top: 5px;
+	}
+	
+
+.pie
+	{
+		background-color: grey;
+		text-align:center;
+		position:fixed;
+		margin:auto;
+		bottom:0px;
+		width:80%;
+
+	}
+	

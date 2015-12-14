@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+		<head>
+				<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+				<title>Informacion</title>
+		</head>
+	
+		<body>
+		<h3>Informacion sobre el producto</h3>
+
+
+    <form action="maneja_formulario.php" method="post">
+    <fieldset>
+      <legend>Datos basicos</legend>
+      <p>Nombre<br/>
+        <label for="s1"></label>
+        <input name="s1" type="text" id="s1" value="" />
+      </p>
+      <p>Descripcion<br/>
+        <label for="s2"></label>
+        <textarea name="s2" id="s2" cols="45" rows="5"></textarea>
+      </p>
+      <p>Foto 
+        <label for="s3"></label>
+        <label for="s3"></label>
+        <input type="file" name="s3" id="s3" />
+      </p>
+      <p>
+        <input name="checkbox" type="checkbox" id="checkbox" value="Añador contador de visitas " />
+<label for="s5"></label>
+      A&ntilde;adir contador de visitas
+      <label for="checkbox"></label>
+      </p>
+      </fieldset>
+    </form>
+    <form id="form2" method="post" action="">
+    <fieldset>
+      <legend>Datos economicos</legend>
+      <p>Precio 
+        <label for="s5"></label>
+        <input name="s5" type="text" id="s5" size="10" />
+      &#8364; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Impuestos 
+      <label for="s6"></label>
+      <select name="s6" id="s6">
+        <option value="4%" selected="selected">4%</option>
+        <option value="7%">7%</option>
+        <option value="16%">16%</option>
+        <option value="25%">25%</option>
+      </select>
+      </p>
+      <p>Promocion<br/>
+        <label>
+          <input type="radio" name="RadioGroup1" value="Ninguno" id="RadioGroup1_0" />
+          Ninguno</label>
+        <br />
+        <label>
+          <input type="radio" name="RadioGroup1" value="Transporte gratuito" id="RadioGroup1_1" />
+          Transporte gratuito</label>
+        <br />
+        <label>
+          <input type="radio" name="RadioGroup1" value="Descuento 5%" id="RadioGroup1_2" />
+          Descuento 5%</label>
+        <br />
+      </p>
+      </fieldset>
+    </form>
+	</body>
+</html>

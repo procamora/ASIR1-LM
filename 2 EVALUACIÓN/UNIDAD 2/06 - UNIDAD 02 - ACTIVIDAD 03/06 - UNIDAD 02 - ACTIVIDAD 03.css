@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+.border {border:double;border-color: #F6C;
+
+div {width:200px; height:21px; background-color: #00C}
+.div2 {width:100px; height:101px; background-color:#3C4}
+.margenes {margin-left:2em; margin-top:3em; margin-bottom:1em; margin-right:5em;}
+.margenes2 {margin:5em 5em 5em 2em}
+.margenes3 {margin:4em 3em 2em 6em}
+.padding1 {padding-left:4em; padding-top:2em; padding-bottom:3em; margin-top:2em}
+.padding2{ padding:15em 3em 3em 7em; background-color:#940; margin-right:2em}

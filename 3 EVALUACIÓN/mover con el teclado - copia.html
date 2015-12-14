@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Hello</title>
+<!------------SMFPERSONAL.NET------------>
+<script type="text/javascript">
+x= 10; //Left
+y= 10; //Top
+function Move(dir)
+{
+switch (dir.keyCode)
+{
+//Up
+case 38:
+y-= 25;
+document.getElementById("imagen").style.top= String(y) + "px";
+break;
+//Down
+case 40:
+y+= 25;
+document.getElementById("imagen").style.top= String(y) + "px";
+break;
+//Right
+case 39:
+x+= 25;
+document.getElementById("imagen").style.left= String(x) + "px";
+break;
+//Left
+case 37:
+x-= 25;
+document.getElementById("imagen").style.left= String(x) + "px";
+break;
+}
+}
+</script>
+</head>
+<body onkeyup="Move(event);">
+<img src="foto.jpg" id="imagen" height="100px" style="position: relative;" alt="dfdf"/>
+</body>
+</html>

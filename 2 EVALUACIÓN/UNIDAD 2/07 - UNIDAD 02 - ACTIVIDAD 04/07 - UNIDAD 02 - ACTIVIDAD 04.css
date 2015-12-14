@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+body 
+	{ 
+		background-image: url(fondo.png);
+        background-repeat: repeat-x;
+    }
+
+.contenedor
+	{
+		width: 800px;
+        height: 580px;
+        border: 1px #333333 solid;
+        padding-top: 10px;
+        margin: auto;
+	}
+
+.menu1 a,span
+	{
+		background-color: white;
+        padding: 5px;
+    }
+
+.menu2
+	{
+		 background-color: greenyellow;
+         width: 200px;
+         border-top: 1px gray solid;
+         border-right:2px gray dotted;
+    }
+            
+.abajo
+	{
+		border-bottom:1px gray solid; 
+	}
+
+.pie
+	{
+		background-color: grey
+	}

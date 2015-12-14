@@ -1,0 +1,69 @@
+<!doctype html>
+<head>
+<title>imagen</title>
+<script type="text/javascript">
+x= 10; //left
+y= 10; //top
+
+
+//esta funcion no rula, estoy intentando mover la imagen con los botones, si puedes intenta hacerlo xD
+function boton(){
+document.getElementById("arriba").style.top = String(y) + "px";
+document.getElementById("izq").style.left
+document.getElementById("abajo").style.top
+document.getElementById("der").style.left
+}
+
+
+//mueve la imagen que tu quieras con los botones de direccion del teclado
+function Move(dir)
+{
+switch (dir.keyCode)
+{
+//Arriba
+case 38:
+y-= 25;
+document.getElementById("imagen").style.top = String(y) + "px";
+break;
+//Abajo
+case 40:
+y+= 25;
+document.getElementById("imagen").style.top = String(y) + "px";
+break;
+//Derecha
+case 39:
+x+= 25;
+document.getElementById("imagen").style.left = String(x) + "px";
+break;
+//Izquierda
+case 37:
+x-= 25;
+document.getElementById("imagen").style.left = String(x) + "px";
+break;
+}
+}
+</script>
+</head>
+<body onkeyup="Move(event);">
+<from>
+  <table border="1">
+  <tr>
+    <td colspan="3" align="center"><input type="button" id="arriba" onClick="boton()" value="   ^   "></td>
+    </tr>
+  <tr>
+    <td><input type="button" id="izq" onClick="boton()" value="   <   "></td>
+    <td><input type="button" id="abajo" onClick="boton()" value="   !   "></td>
+    <td><input type="button" id="der" onClick="boton()" value="   >   "></td>
+  </tr>
+</table>
+</from>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div align="center"> <img src="foto.jpg" id="imagen" height="100px" style="position: relative;" alt="dfdf"/></div>
+</body>
+</html>

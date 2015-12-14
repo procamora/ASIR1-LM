@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+		<head>
+				<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+				<title>CV</title>
+		</head>
+			
+		<body>
+			<h1>Rellena tu Curriculum</h1>
+            
+        <form action="maneja_formulario.php" method="post">
+<fieldset>
+<legend>Datos Personales</legend>
+<p><label for="so">Provincia</label> <br/>
+<select id="so" name="so">
+  <option value="" selected="selected">- selecciona -</option>
+<option value="Barcelona">Barcelona</option>
+<option value="Ceuta">Ceuta</option>
+<option value="Albacete">Albacete</option>
+<option value="Murcia">Murcia</option>
+<option value="Almeria">Almeria</option>
+<option value="Madrid">Madrid</option>
+<option value="Otro">Otro</option>
+</select></p>
+<p><legend>Fecha de Nacimiento<br/>
+  
+    <input name="s5" type="text" id="s5" size="5" />
+    de
+<select id="so4" name="so4">
+    <option value="">Mes</option>
+    <option value="Enero" selected="selected">Enero</option>
+    <option value="Febrero">Febrero</option>
+    <option value="Marzo">Marzo</option>
+    <option value="Abril">Abril</option>
+    <option value="Mayo">Mayo</option>
+    <option value="Junio">Junio</option>
+    <option value="Julio">Julio</option>
+    <option value="Agosto">Agosto</option>
+    <option value="Septiembre">Septiembre</option>
+    <option value="Octubre">Octubre</option>
+    <option value="Noviembre">Noviembre</option>
+    <option value="Diciembre">Diciembre</option>
+  </select> 
+  de 
+  
+  <input name="s6" type="text" id="s6" size="10" />
+</legend>
+</p>
+<p>
+  <label for="so3">Temas de inter&eacute;s</label> 
+  <br/>
+  <select id="so3" name="so3" size="5" multiple="multiple">
+    <option value="bbdd" selected="selected">Administraci&oacute;n de bases de datos</option>
+    <option value="analisis">An&aacute;lisis y programaci&oacute;n</option>
+    <option value="arquitectura">Arquitectura</option>
+    <option value="calidad">Calidad</option>
+    <option value="erp">ERP, CRM, Business Inteligence</option>
+    <option value="Informatica">Informatica</option>
+    <option value="Ciencias">Ciencias</option>
+    <option value="Coches">Coches</option>
+  </select>
+</p>
+</fieldset>
+
+
+        </form>
+		</body>
+		
+		
+</html>

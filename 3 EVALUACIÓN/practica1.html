@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>formulario</title>
+<script src="practica1.js"></script>
+<noscript>activalo</noscript>
+
+</head>
+
+<body>
+<form>
+  <table border="0">
+    <tr>
+      <td width="73">Nombre:</td>
+      <td width="144">
+      <input type="text" name="nombre"></td>
+      <td width="200">Sexo:</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td rowspan="3"><p>
+       
+          <input type="radio" value="opción" name="sexo">
+          Masculino
+        <br>
+  
+          <input type="radio" value="opción" name="sexo">
+          Femenino
+        <br>
+  
+          <input type="radio" value="opción" name="sexo">
+          Otro
+        <br>
+      </p></td>
+    </tr>
+    <tr>
+      <td>Apellidos </td>
+      <td>
+      <input type="text" name="apellidos"></td>
+    </tr>
+    <tr>
+      <td>Pais</td>
+      <td>
+        <select name="paises">
+          <option>España</option>
+          <option>Otro</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td>Experiencia:</td>
+      <td><select name="experiencia" size="4">
+
+        <option>Programador</option>
+
+        <option>Administrador</option>
+
+        <option>Camarero</option>
+
+        <option>Cocinero</option>
+
+      </select>
+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3" align="center"><input name="bot1" value="Mostrar" onclick="mostrar(this.form)" type="button"></td>
+    </tr>
+  </table>
+  <p>Has introducnameo:</p>
+  <p>
+  <textarea cols="35" rows="6" name="areaTexto1"></textarea>
+  </p>
+</form>
+</body>
+</html>

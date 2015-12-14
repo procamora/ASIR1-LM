@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<script type="text/javascript">
+<!--
+function runTest(form, button)  {
+	Ret = false;
+	if (button.name == "1") Ret = testBox1(form);
+	if (button.name == "2") Ret = testBox2(form);
+	if (button.name == "3") Ret = testBox3(form);
+	if (button.name == "4") Ret = testBox4(form);
+	if (Ret)
+		alert ("Los datos ingresado son Correctos!");
+}
+
+function testBox1(form) {
+	Ctrl = form.inputbox1;
+	if (Ctrl.value == "" || Ctrl.value.indexOf ('@', 0) == -1) {
+              	validatePrompt (Ctrl, "Debes ingresar un e-mail válido")
+		return (false);
+	} else
+		return (true);
+}
+function testBox2(form) {
+	Ctrl = form.inputbox2;
+	if (Ctrl.value.length != 5) {
+		validatePrompt (Ctrl, "Debes escribir CINCO caracteres")
+		return (false);
+	} else
+		return (true);
+}
+function testBox3(form) {
+         Ctrl = form.inputbox3;
+	if (Ctrl.value.length < 3) {
+		validatePrompt (Ctrl, "Entrar 3 o mas caracteres")
+		return (false);
+	} else
+		return (true);
+}
+function testBox4(form) {
+	Ctrl = form.inputbox4;
+	if (Ctrl.value == "") {
+		validatePrompt (Ctrl, "Este campo no puede estar vacio")
+		return (false);
+	} else
+		return (true);
+}
+function runSubmit (form, button)  {
+	if (!testBox1(form)) return;
+	if (!testBox2(form)) return;
+	if (!testBox3(form)) return;
+	if (!testBox4(form)) return;
+	alert ("Todas la entradas OK!");
+	document.test.submit();	// un-comment to submit form
+	return;
+}
+
+function validatePrompt (Ctrl, PromptStr) {
+	alert (PromptStr)
+	Ctrl.focus();
+	return;
+}
+
+function loadDoc() {
+
+	// initial focus; use if needed
+	//document.test.inputbox1.focus ();
+	return;
+
+}
+
+//-->
+
+</script>
+</head>
+<body bgcolor="#FFFFFF" onLoad="loadDoc()">
+<h3 align="center">Verificación de ingreso de datos en un formulario <br>
+con JavaScript</h3>
+<form NAME="test" ACTION="" METHOD="GET">
+  <div align="center"><center><table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><div align="left"><p><font face="Arial">I<small>ngresa tu e-mail :</small></font></td>
+      <td><input TYPE="text" NAME="inputbox1" size="20"> </td>
+      <td><input TYPE="button" NAME="1" VALUE="Test" onClick="runTest(this.form, this)"></td>
+    </tr>
+    <tr>
+      <td><small><font face="Arial">Ingresa sólo 5 caracteres :</font></small></td>
+      <td><input TYPE="text" NAME="inputbox2" size="20"></td>
+      <td><input TYPE="button" NAME="2" VALUE="Test" onClick="runTest(this.form, this)"></td>
+    </tr>
+    <tr>
+      <td><font face="arial" size="2">Ingresa 3 o más caracteres: </font></td>
+      <td><input TYPE="text" NAME="inputbox3" size="20"></td>
+      <td><input TYPE="button" NAME="3" VALUE="Test" onClick="runTest(this.form, this)"></td>
+    </tr>
+    <tr>
+      <td><font face="arial" size="2">Ingresa cualquier cosa:</font> </td>
+      <td><input TYPE="text" NAME="inputbox4" size="20"></td>
+      <td><input TYPE="button" NAME="4" VALUE="Test" onClick="runTest(this.form, this)"></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="reset" name="reset" value="Inicializar"></td>
+      <td align="center"><input TYPE="button" NAME="Submit" VALUE="Test final"
+      onClick="runSubmit(this.form, this)"></td>
+    </tr>
+  </table>
+  </center></div>
+</form>
+</body>
+</html>   

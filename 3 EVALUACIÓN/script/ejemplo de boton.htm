@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ejemplo</title>
+<script>
+function funcion1(){
+alert('me has pulsado, ooh yeaah');
+}
+function funcion2(){
+
+hola = document.getElementById(boton);
+alert(hola);
+}
+<!--muestra el codigo de la letra marcada-->/*
+function manejador(elEvento) {
+var evento = elEvento || window.event;
+alert("["+evento.type+"] El codigo de la tecla pulsada es " + evento.keyCode);
+}
+document.onkeyup = manejador;
+document.onkeydown = manejador;
+*/
+
+</script>
+</head>
+
+<body>
+
+<input type="button" value="pulsame 1" onclick="funcion1()" />
+<input type="button" value="pulsame 2" id="boton" />
+<input type="button" value="pulsame 3" onclick="alert('me has pulsado, ooh yeaah 3')" />
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<script type="text/javascript">
+/*
+  This script by: Bill Bean  
+  Email me at: beaner@geneseo.net  
+*/
+function ask()
+{
+ var enter=prompt("Tenés tres Opciones: Ingresá 1 para ver el menú. 2 para ir a la página. \n3 enviarme un email a mi!"," ");
+        var yes = 1 
+            if (enter == 1)
+             {
+              alert('Usted eligió ver la siguiente página...');
+              parent.location.href = "http://www.clarin.com"
+             }
+            else if (enter == 2)
+             {
+              parent.location.href = "http://www.gamarod.com.ar"
+             }
+            else if (enter == 3)
+             {
+              parent.location.href = "mailto:gamarod[at]gamarod.com.ar"
+             }
+      else
+             {
+              alert('número inválido, Por Favor intente de nuevo');
+              ask()
+             }
+           
+      
+}
+ask()
+</script>
+</head>
+
+<body>
+</body>
+</html>

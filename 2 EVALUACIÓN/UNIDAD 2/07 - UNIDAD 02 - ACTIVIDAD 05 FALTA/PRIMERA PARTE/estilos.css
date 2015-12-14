@@ -1,0 +1,124 @@
+body
+	{
+	font-family: Verdana, Arial;
+	}
+
+.contenedor
+	{
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 1px black; /* Este estilo es solo para probar el aspecto. Hay que eliminarlo luego */
+	width: 800px;
+	}
+
+.cabeceraIzq
+	{
+	border: solid 1px red; /* Este estilo es solo para probar el aspecto. Hay que eliminarlo luego */
+	float: left;
+	font-size: 2em;
+	color: orange;
+	}
+
+.cabeceraDer
+	{
+	border: solid 1px green; /* Este estilo es solo para probar el aspecto. Hay que eliminarlo luego */
+	float: right;
+	}
+
+.separador
+	{
+	border: solid 1px blue; /* Este estilo es solo para probar el aspecto. Hay que eliminarlo luego */
+	clear: both;
+	height: 1em;
+	}
+
+.nav
+	{
+	background-image: url("fondoNav.png");
+	background-repeat: repeat-x;
+	background-color: #0404B4;
+
+	/**padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 5px;
+	padding-left: 5px;**/
+
+	padding: 8px 5px 8px 5px;
+
+	border: solid 1px lime; /* Este estilo es solo para probar el aspecto. Hay que eliminarlo luego */
+	}
+
+
+/* Esta regla se aplica a todos los enlaces (las etiquetas <a>) contenidas dentro de una etiqueta con class=nav */
+.nav a				
+	{
+	margin-left: 5px;
+	margin-right: 5px;
+	}
+
+/* Esta regla se aplica a todos los enlaces en estado normal*/
+.nav a:link
+	{
+	color: white;
+	text-decoration: none;
+	
+	}
+
+/* Esta regla se aplica a todos los enlaces cuando el ratón está encima del enlace*/
+.nav a:hover
+	{
+	color: orange;
+	text-decoration: underline;
+	}
+
+/* Esta regla se aplica a los enlaces visitados*/
+.nav a:visited
+	{
+	color: green;
+	text-decoration: none;
+	}
+
+
+
+.colIzq
+	{
+	float:left;
+	width: 167px;
+	border: solid 1px red; /* Este estilo es solo para probar el aspecto. Hay que eliminarlo luego */
+	}
+
+.colCen
+	{
+	float:left;
+	width: 460px;
+	border: solid 1px green; /* Este estilo es solo para probar el aspecto. Hay que eliminarlo luego */
+	}
+
+.colDer
+	{
+	float:left;
+	width: 167px;
+	border: solid 1px blue; /* Este estilo es solo para probar el aspecto. Hay que eliminarlo luego */
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**a
+a:hover
+a:link
+a:visited
+**/

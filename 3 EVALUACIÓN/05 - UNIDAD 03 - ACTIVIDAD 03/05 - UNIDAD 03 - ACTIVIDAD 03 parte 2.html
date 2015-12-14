@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Parte 2</title>
+<script src="05 - UNIDAD 03 - ACTIVIDAD 03 parte 2.js"></script>
+<noscript>activa el javascript</noscript>
+</head>
+
+<body>
+<form>
+  <table border="0">
+     <tr>
+      <td>Usuario</td>
+      <td><label for="users"></label>     
+      <input type="text" id="users"></td>
+    </tr>
+    <tr>
+      <td>Contraseña</td>
+      <td><label for="pass"></label>
+      <input type="hidden">
+      <input name="display" type="password" onclick="mostrar('menu')" readonly>
+     </td> 
+     </tr>
+     <tr>
+      <td colspan="2">
+      <div style="display:none" ID="menu">
+      <input type="button" onClick="addChar(this.form.display, '1')" value="1">
+      <input type="button" onClick="addChar(this.form.display, '9')" value="9">
+      <input type="button" onClick="addChar(this.form.display, '4')" value="4">
+      <input type="button" onClick="addChar(this.form.display, '6')" value="6">
+      <input type="button" onClick="addChar(this.form.display, '3')" value="3"><br/>
+      <input type="button" onClick="addChar(this.form.display, '5')" value="5">
+      <input type="button" onClick="addChar(this.form.display, '2')" value="2">
+      <input type="button" onClick="addChar(this.form.display, '8')" value="8">
+      <input type="button" onClick="addChar(this.form.display, '0')" value="0">
+      <input type="button" onClick="addChar(this.form.display, '7')" value="7">
+      </div>
+      </td>
+    </tr>
+    <tr>
+    	<td><input id="aceptar" type="submit" onClick="aceptar" value="Aceptar"></td>
+        <td><input type="button" onClick="this.form.display.value = null " value="Borrar"></td>
+    </tr>
+  </table>
+
+
+</form>
+</body>
+</html>

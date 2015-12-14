@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<script type="text/javascript">
+<!-- Original:  Ronnie T. Moore -->
+<!-- Begin
+function textCounter(field, countfield, maxlimit) {
+if (field.value.length > maxlimit) // if too long...trim it!
+field.value = field.value.substring(0, maxlimit);
+// otherwise, update 'characters left' counter
+else 
+countfield.value = maxlimit - field.value.length;
+}
+// End -->
+</script>
+</head>
+<body>
+<!-- textCounter() parameters are:  text field, the count field, max length -->
+<form name="myform" action="YOUR-SCRIPT.CGI">
+  <font size="1" face="arial, helvetica, sans-serif"><p>( El límite es de 125 caracteres. )<br>
+  <textarea name="message" wrap="physical" cols="28" rows="4"
+  onKeyDown="textCounter(this.form.message,this.form.remLen,125);"
+  onKeyUp="textCounter(this.form.message,this.form.remLen,125);"></textarea> <br>
+  <input readonly type="text" name="remLen" size="3" maxlength="3" value="125"> caracteres</font> </p>
+</form>
+</body>
+</html> 

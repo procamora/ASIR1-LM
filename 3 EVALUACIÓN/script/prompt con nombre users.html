@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head><title>Uso del Prompt</title></head>
+<body text="#000000" link="#0000FC" bgcolor="#FFFFFF">
+<SCRIPT Language='JavaScript'>
+<!-- Comienzo del JavaScript
+<!-- Este Script muestra el nombre del visitante en una nueva ventana  -->
+<!-- Gabriel Rodríguez    - Rafael Calzada - Bs As - Argentina         -->
+var nombre=null;
+var contenido=null;
+var nombre = prompt("Bienvenido a Gamarod JavaScript! \nEscribe tu nombre Por Favor !","");
+if (nombre==null || nombre=="") {
+ 	
+ 	alert("Ey! no has ingresado tu nombre, de alguna forma voy a tener que llamarte, \n ¿Qué te parece si te llamo 'Visitante'?");
+	
+	nombre = "Visitante";
+}
+function AbrirVentana() {
+    var NuevaVentana = window.open("","","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=yes,width=400,height=260");
+      var contenido  = "<HTML><TITLE>Gaby JavaScript!</TITLE>"
+	  contenido += "<BODY>"
+          contenido += "<B><BR><CENTER><H1>      BIENVENIDO   </H1></B><BR>"
+          contenido += "<B><H3>" + nombre + "</H3></B><BR>" 
+	  contenido += "Que tal! ¿Cómo Andás? espero que bien! <BR>"
+   	  contenido += "¿y que te parece mi Web!? <BR>"
+          contenido += "espero que la misma sea de tu agrado y <BR>"
+	  contenido += "que agregues mi dirección a tus Favoritos.<BR>"
+	  contenido += "<H2>Gaby JavaScript!</H2></center>"
+	  contenido += "</BODY></HTML>"
+	  NuevaVentana.document.write(contenido)
+}
+// Fin del JavaScript -->
+</SCRIPT><br>
+<center><script>AbrirVentana();</script>
+<h1><font color="Navy"> Gamarod JavaScript </font></h1>
+http://www.gamarod.com.ar<br>
+<FONT SIZE=1 COLOR="#000000" FACE="Arial">Gabriel Rodríguez, Bs As - Argentina<BR>
+</FONT>
+</center> 
+</body></html>

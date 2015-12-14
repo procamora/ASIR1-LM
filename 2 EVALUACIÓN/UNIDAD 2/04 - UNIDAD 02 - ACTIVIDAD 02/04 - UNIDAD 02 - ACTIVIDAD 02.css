@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {font-family:Arial, Helvetica, sans-serif}
+.filacolor {
+	background: #6F0;
+	color: black
+}
+.negrita {font-weight: bold;} 
+.azul {color: blue; font-weight:bold}
+.gris {background: #c0c0c0;}
+.td1 {text-align: left}
+td {text-align:right}

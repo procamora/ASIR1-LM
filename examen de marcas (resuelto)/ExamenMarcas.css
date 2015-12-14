@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contenedor{
+	
+	margin-left:50px;
+	border-left:2px black dotted;
+	padding-left:10px;
+	width:649px;
+
+
+}
+
+.textoco
+{
+	/*width:650px;*/
+	margin-top:100px;
+	margin-left:px;
+	
+	border-bottom:solid 2px black;
+	
+
+	
+	}
+	
+.tocho
+
+
+{
+	/*width:650px;*/
+	display:none;
+	padding-top:10px;	
+	
+	
+	}
+	
+	
+	
+.lee
+{
+	float:left;
+	margin-left:1px;
+	cursor:pointer;
+	
+	
+	
+	
+}
+
+.cola
+{
+	float:left;
+	margin-right:500px;
+	
+	
+	
+	
+	}
+.separador
+
+	{
+		height:1px;
+		clear:both;
+		
+	
+	}
+
+
+.suma
+
+{
+	margin-top:100px;
+	margin-left:100px;
+
+
+}
+
+.suma span
+
+{
+	
+	margin:20px;
+	
+	
+	
+	}
+
+.suma #resultado
+
+{
+	width:200px;
+	border:solid 1px black;
+	margin-top:20px;
+	height:30px;
+	text-align:center	
+	
+	
+	}
+	
+.fuente
+
+	{
+		
+		margin-top:100px;
+		
+		margin-left:100px;
+		
+		
+		
+		
+		}
+
+.formulario
+
+	{
+		
+		width:800px;
+		margin-top:100px;
+		margin-left:100px;
+		
+		}
+
+.info 
+{
+	
+	
+	
+	
+	width: 150px;
+	float:left;
+	margin-left:50px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin-top:3px;
+	}
+	
+	
+	
+.info1
+{
+	
+	
+	
+	
+	float:left;
+	margin-left:50px;
+	margin-top:7px;
+
+	}
+
+
+.info1 div 
+
+{	margin-bottom:18px;
+	
+}	
+
+.sub
+
+{
+	
+	float:left;
+	}
+
+#enombre {color:red;}
+#enif {color:red;}
+#ecorreo {color:red;}
+
+
+
+.contenido {
+	
+	
+	width:300px;
+	border:dotted 3px orange;
+	
+	padding:20px;
+	
+	margin-top:200px
+	
+	
+	}
+
+
+
+
+.resumen {
+	
+ margin-top:200px;
+ margin-left:200px;	
+	
+	
+	}
+
+
+
+
+

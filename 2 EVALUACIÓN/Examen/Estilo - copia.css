@@ -1,0 +1,136 @@
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:90%;
+	}
+	
+.contenedor{
+	width: 80%;
+	margin: 5px auto 5px auto;
+	}
+	
+.cabecera{
+	background-image:url(fondo.png);
+	height:100px;
+	background-repeat: repeat-x;
+	}
+
+.titulo1{
+	text-align:center;
+	color:#009;
+	font-size:200%;
+	top:30px;
+	}
+	
+.titulo2{
+	text-align:center;
+	color:#009;
+	font-size:70%;
+	padding:20px;
+	}
+		
+.nav {
+	text-align:center;
+	padding:5px 0px 5px 0px;
+	font-style: normal;
+	font-weight: bold;
+	}
+
+.nav_izq {
+	float:left;
+	text-align:center;
+	background-color:#333;
+	color:#F90;
+	width: 20%;
+	margin-top:5px;
+	}
+
+.nav_der {
+	float:right;
+	text-align:center;
+	background-color:#333;
+	color:#F90;
+	width: 26%;
+	margin-top:5px;
+	}
+
+	
+.nav ul{
+	display: inline;
+	list-style-type: none;
+	padding: 0px;
+	}
+	
+.nav li{
+	display: inline;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: 1px solid #6F0;
+	position:relative;
+	top: 5px;
+	padding: 3px 3px 3px 3px;
+	}
+	
+a {
+	color:#000;
+	font-size:100%;
+	}
+	
+a:link{
+	text-decoration:none
+	}
+a:hover{
+	text-decoration:none
+	}
+a:visited{
+	text-decoration:none
+	}
+a:active{
+	text-decoration:none
+	}
+	
+.pie{
+	margin:auto;
+	margin-top:10px;
+	bottom:0px;
+	width:100%;
+	background-color:#333;
+	text-align:center;
+	}	
+	
+.izq{
+	float:left;
+	width: 20%;
+	font-weight: bold;
+	font-size: 90%;
+	}
+	
+.cen{
+	float:left;
+	padding-left:5px;
+	width: 54%;
+	}
+	
+.der{
+	float:left;
+	width: 20%;
+	color: #F00;
+	font-weight: bold;
+	font-size: 90%;
+	padding-top:8px;
+	}
+	
+.separador{
+	height:1px;
+	clear:both;
+	font-weight: bold;
+	}
+	
+.izq ul{
+	list-style:none;
+	padding-left:0px;
+	width:auto;
+	}
+
+.Fecha {
+	color: #F00;
+}

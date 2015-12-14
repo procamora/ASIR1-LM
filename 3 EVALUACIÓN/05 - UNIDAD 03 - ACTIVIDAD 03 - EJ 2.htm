@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Sin título 1</title>
+		<script type="text/javascript">
+
+			var pantalla, b0, b1, b2, b3, b4, b5, b6, b7, b8, b9;
+			
+			function mostrarEnPantalla(eventoDisparado)
+				{
+				var evento = (eventoDisparado || window.event);
+				var boton  = (evento.srcElement || evento.target);
+				pantalla.value = pantalla.value + boton.value;
+				}
+
+			function asignarEventos()
+				{
+				b0.onclick = mostrarEnPantalla;
+				b1.onclick = mostrarEnPantalla;
+				b2.onclick = mostrarEnPantalla;
+				b3.onclick = mostrarEnPantalla;
+				b4.onclick = mostrarEnPantalla;
+				b5.onclick = mostrarEnPantalla;
+				b6.onclick = mostrarEnPantalla;
+				b7.onclick = mostrarEnPantalla;
+				b8.onclick = mostrarEnPantalla;
+				b9.onclick = mostrarEnPantalla;
+				}
+
+			function capturarElementos()
+				{
+				pantalla = document.getElementById("pantalla");
+				b0 = document.getElementById("n0");
+				b1 = document.getElementById("n1");
+				b2 = document.getElementById("n2");
+				b3 = document.getElementById("n3");
+				b4 = document.getElementById("n4");
+				b5 = document.getElementById("n5");
+				b6 = document.getElementById("n6");
+				b7 = document.getElementById("n7");
+				b8 = document.getElementById("n8");
+				b9 = document.getElementById("n9");
+				}
+
+			function iniciar()
+				{
+				capturarElementos();
+				asignarEventos();
+				}
+
+			window.onload = iniciar;
+
+		</script>
+	</head>
+
+	<body>
+
+	<form method="get" action="#">
+
+		<input type="text" id="pantalla" /> 
+
+		<br/>
+
+		<input type="button" id="n1" value="1"/>
+		<input type="button" id="n2" value="2"/>
+		<input type="button" id="n3" value="3"/>
+	
+		<br/>
+
+		<input type="button" id="n4" value="4"/>
+		<input type="button" id="n5" value="5"/>
+		<input type="button" id="n6" value="6"/>
+
+		<br/>
+
+		<input type="button" id="n7" value="7"/>
+		<input type="button" id="n8" value="8"/>
+		<input type="button" id="n9" value="9"/>
+
+		<br/>
+		<input type="button" id="n0" value="0"/>
+		<input type="reset" value="borrar" />
+
+	</form>	
+	</body>
+
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript" language="javascript" src="examenMarcas.js"></script>
+
+<link href="ExamenMarcas.css" rel="stylesheet" type="text/css">
+
+<title>Examen marcas</title>
+
+</head>
+
+<body>
+
+<noscript>Activa el JavaScrip de tu navegador makina , de lo contrario no te funcionara nada </noscript>
+
+<div class="contenedor">
+
+	
+    <div class="textoco" id="contTex">
+
+
+				<div class="fecha">28/06/2012</div>
+
+				<div class="titul">Colabora con nosotros y enseñanos que sabes hacher</div>
+                <div class="separador"></div>
+                <div class="cola">Colabora</div>
+				<div class="lee "id="lee">[Leer Mas]</div>
+                <div class="separador"></div>
+                
+               
+
+	</div>
+				 <div class="tocho" id="tocho" style="display:none;">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>	
+	</div>
+
+	<div class="separador"></div>
+
+	
+    <div class="suma">
+    
+    			<span><input type="text" id="op1"></span> <span><input type="text" id="op2"></span>
+                
+                <span><input type="button" value="Sumalos" id="suma"></span>
+               	
+                <p><br>Resultado</p>
+                <div id="resultado"> </div>
+    
+    
+    </div>
+	
+    
+    
+    <div class="fuente">
+    
+    			<span><input type="button" id="masf"  value="Mas Tamaño"></span> <span><input type="button" id="menosf" value="Menos Tamaño"></span>
+    			
+    
+    </div>
+
+
+
+
+
+	
+    <div class="formulario">
+    
+    		<form action="/tarjetas/solicitar" method="post" name="miform" id="miform">
+                 
+                 <fieldset >
+             
+                        <legend>Solicita tu tarjeta sanitaria</legend>
+                        
+                        <div class="info">
+                           
+                           
+                          	<p>Tipo de tarjeta:</p>
+                            <p>Nombre y apellidos</p>
+                            <p>NIF</p></p>
+                            <p>EMail</p></p>
+                    
+                         </div>
+                         
+                         
+                         
+                         <div class="info1">
+                               
+                               
+                                <div  id="usuario"> <SELECT  name="tarjetas">
+                                                            
+                                                                     
+                                                                    <OPTION VALUE="Tarjeta Normal" >Tarjeta normal</OPTION>
+                                                              
+                                                                    <OPTION VALUE="Anormal">Anormal</OPTION>
+                                                                    <OPTION VALUE="subnormal">Subnormal</OPTION>
+                                                                    
+                                                            
+                                                                </SELECT></div>
+                            
+                            
+                                <div ><input type="text"  id="nombre"><span id="enombre"></span></div>
+                            
+                            
+                            
+                                <div ><input type="text" id="nif"><span id="enif"></span></div>
+                            
+                            
+                                
+                                <div><input type="text"  id="mail"><span id="ecorreo"></span> </div>
+                            
+                                <div ><input type="button" value="Solicitar tarjeta" id="envia"></div>
+
+
+
+</div>
+                                                
+                
+            
+            
+            
+            
+            
+            
+                </fieldset>
+
+			</form>
+
+
+
+	</div>
+
+		
+
+
+                    <input type="button" id="bresu" value="resumen">
+                    
+                    
+                    <div id="contenido" class="contenido" ></div>
+                    
+                    <div id="tiempo"></div>
+
+
+
+
+	
+
+
+</body>
+</html>
